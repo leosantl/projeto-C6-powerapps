@@ -3,7 +3,38 @@
 Todas as listas ficam no site do SharePoint da equipe **Controle de Estoque** (veja o
 [Passo 0](../README.md#passo-0-conferir-o-acesso)).
 
-## Como criar cada lista
+## Jeito rápido: criar a lista a partir do Excel (Etapa 1)
+
+Em vez de criar coluna por coluna, use as planilhas da pasta [`modelos/`](../modelos):
+`Lista-Perifericos.xlsx` e `Lista-Movimentacoes.xlsx`.
+
+1. No site, clique em **+ Novo → Lista → Do Excel**. Envie a planilha e escolha a tabela.
+2. Na prévia, confira o **tipo** em cima de cada coluna:
+
+   | Planilha | Coluna | Tipo |
+   |---|---|---|
+   | Perifericos | Modelo (vira o Título) | Linha única de texto |
+   | | Categoria | **Escolha** |
+   | | Marca, CodigoBarras, Local | Linha única de texto |
+   | | Descricao | Várias linhas de texto |
+   | | Quantidade, Minimo | **Número** |
+   | | Ativo | **Sim/Não** |
+   | Movimentacoes | Item (vira o Título) | Linha única de texto |
+   | | PerifericoID, Quantidade, SaldoApos | **Número** |
+   | | Tipo | **Escolha** |
+   | | Responsavel, Motivo | Linha única de texto |
+   | | Data | **Data e hora** |
+3. Clique em **Avançar**, dê o nome (`Perifericos` / `Movimentacoes`) e clique em **Criar**.
+4. **Apague as linhas de exemplo:** marque todas e clique em **Excluir**. Elas só servem para o SharePoint reconhecer os
+   tipos e as opções de Categoria e Tipo.
+5. Ajuste duas coisas em `Perifericos`, no cabeçalho da coluna → **Configurações de coluna → Editar**:
+   - `Quantidade`: **Valor padrão 0**;
+   - `Ativo`: **Valor padrão Sim**.
+
+Depois disso, as listas ficam iguais às das tabelas abaixo. Os ajustes que faltarem, como exigir informação ou o
+valor mínimo, podem ser feitos com calma, pelo mesmo menu.
+
+## Como criar cada lista (coluna por coluna)
 
 1. No site, clique em **+ Novo → Lista → Lista em branco**. Dê o **nome exato** da tabela, sem acento (por exemplo,
    `Perifericos`). O nome sem acento evita problemas nas fórmulas. Depois você pode trocar o nome de exibição.
