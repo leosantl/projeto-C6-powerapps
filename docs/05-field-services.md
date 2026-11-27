@@ -280,7 +280,7 @@ ThisItem.Responsavel & If(IsBlank(ThisItem.Motivo); ""; " — " & ThisItem.Motiv
 1. **Tire o cartão `Quantidade` do formulário.** Selecione o formulário → **Editar campos** → ⋯ ao lado de
    Quantidade → **Remover**. O saldo só muda pela tela Movimentar. Item novo começa com 0 (padrão da lista); depois
    registre uma **Entrada**.
-2. Na mesma janela, deixe na ordem: Categoria, Marca, Modelo, Código de barras, Mínimo, Local, Descrição, Ativo.
+2. Na mesma janela, deixe na ordem: Categoria, Marca, Modelo, Código de barras, Mínimo, Local, Ativo.
 
 `EditForm1` → **Item**. Para item novo, o formulário ignora este valor e começa em branco:
 ```
