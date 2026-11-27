@@ -33,6 +33,10 @@ Antes de começar, confira duas coisas. Nenhuma delas cria nada.
      SharePoint seu. Para abrir o site, use, na equipe, **Arquivos → Abrir no SharePoint**.
    - No site, clique em **+ Novo → Lista**. Se a janela de criar lista abrir, está tudo certo.
 
+## Site compartilhado (Field Services)
+
+Para montar o Estoque dentro da Field Services sem mexer no que já existe, siga [docs/05-field-services.md](docs/05-field-services.md).
+
 ## Etapas
 
 | Etapa | O que entrega | Guia |
